@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cesar Cruz — Live Music for Bars, Weddings &amp; Events | Hickory &amp; the Catawba Valley, NC</title>
+<meta name="description" content="Cesar Cruz is a live cover artist in Hickory, NC, playing solo, duo, trio or full band for bars, breweries, weddings, markets and private events across the Catawba Valley.">
+<link rel="icon" type="image/png" href="media/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&amp;family=Spectral:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&amp;display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{margin:0;background:#221912;color:#F3EADB;font-family:'Hanken Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  img{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit;cursor:pointer}
+  input,select,textarea{font-family:inherit;font-size:16px}
+  ::selection{background:#BD6B38;color:#FBF6EC}
+  input::placeholder,textarea::placeholder{color:rgba(42,33,26,0.42)}
+  select option{color:#2A211A;background:#ECE3D1}
+</style>
+</helmet>
+
+<div ref="{{ rootRef }}" style="position:relative;width:100%;overflow-x:hidden;background:#221912;">
+
+  <!-- ===================== NAV ===================== -->
+  <header ref="{{ navRef }}" style="position:fixed;top:0;left:0;right:0;z-index:60;padding-top:18px;padding-bottom:18px;background:transparent;transition:background .4s ease, box-shadow .4s ease, padding .35s ease, backdrop-filter .4s ease;">
+    <div style="width:100%;max-width:1160px;margin:0 auto;padding:0 clamp(20px,5vw,56px);display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,3vw,16px);">
+      <a href="#top" aria-label="Cesar Cruz — home" style="display:flex;align-items:center;gap:12px;">
+        <img src="media/logo.png" alt="Cesar Cruz monogram" style="width:clamp(34px,9vw,40px);height:clamp(34px,9vw,40px);object-fit:contain;">
+        <span style="font-family:'Spectral',serif;font-weight:600;font-size:clamp(14px,4.4vw,17px);letter-spacing:clamp(.1em,.6vw,.2em);color:#F3EADB;white-space:nowrap;">CESAR&nbsp;CRUZ</span>
+      </a>
+      <a href="#contact" style="display:inline-flex;align-items:center;gap:8px;background:#BD6B38;color:#FBF6EC;font-family:'Hanken Grotesk',sans-serif;font-weight:700;font-size:clamp(12px,3.4vw,13.5px);letter-spacing:.03em;padding:clamp(9px,2.4vw,11px) clamp(13px,4.2vw,22px);border-radius:3px;border:1px solid #BD6B38;transition:background .25s ease,border-color .25s ease,transform .25s ease;white-space:nowrap;" style-hover="background:#A85C2C;border-color:#A85C2C;transform:translateY(-1px)">Book Cesar</a>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="top" data-screen-label="Hero" style="position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;background:#160F0A;">
+    <img src="media/hero.jpg" alt="Cesar Cruz playing acoustic guitar in low window light" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:42% 38%;">
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(18,12,7,0.58) 0%, rgba(18,12,7,0.16) 34%, rgba(18,12,7,0.74) 100%);"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg, rgba(18,12,7,0.66) 0%, rgba(18,12,7,0.18) 52%, rgba(18,12,7,0) 100%);"></div>
+    <div data-reveal="" style="position:relative;width:100%;max-width:1160px;margin:0 auto;padding:0 clamp(20px,5vw,56px) clamp(54px,9vh,116px);">
+      <p style="font-family:'Hanken Grotesk',sans-serif;font-size:clamp(11px,1.4vw,13px);font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:#E6B98A;margin:0 0 clamp(18px,3vh,26px);">Singer-Songwriter · Live Music · Hickory &amp; the Catawba Valley, NC</p>
+      <h1 style="font-family:'Spectral',serif;font-weight:800;font-size:clamp(3.1rem,13vw,8.4rem);line-height:0.92;letter-spacing:-0.015em;margin:0;color:#F7F0E3;text-shadow:0 2px 40px rgba(0,0,0,0.4);">Cesar Cruz</h1>
+      <p style="font-family:'Hanken Grotesk',sans-serif;font-weight:400;font-size:clamp(1.06rem,2.2vw,1.45rem);line-height:1.5;color:rgba(243,234,219,0.84);margin:clamp(20px,3vh,30px) 0 0;max-width:600px;">Live music for bars, weddings &amp; events across the Catawba Valley &amp; beyond. Solo, duo, trio, or full band.</p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:clamp(28px,4vh,42px);">
+        <a href="#contact" style="display:inline-flex;align-items:center;justify-content:center;gap:10px;width:205px;flex:none;white-space:nowrap;background:#BD6B38;color:#FBF6EC;font-family:'Hanken Grotesk',sans-serif;font-weight:700;font-size:15px;letter-spacing:.01em;padding:15px 30px;border-radius:3px;border:1px solid #BD6B38;transition:background .25s ease,border-color .25s ease,transform .25s ease;" style-hover="background:#A85C2C;border-color:#A85C2C;transform:translateY(-2px)">Book Cesar</a>
+        <a href="#listen" style="display:inline-flex;align-items:center;justify-content:center;gap:10px;width:205px;flex:none;white-space:nowrap;background:rgba(243,234,219,0.06);color:#F3EADB;font-family:'Hanken Grotesk',sans-serif;font-weight:600;font-size:15px;letter-spacing:.01em;padding:15px 30px;border-radius:3px;border:1px solid rgba(243,234,219,0.34);transition:background .25s ease,border-color .25s ease;" style-hover="background:rgba(243,234,219,0.14);border-color:rgba(243,234,219,0.62)">Hear him play ▸</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" data-screen-label="About" style="background:#ECE3D1;color:#2A211A;padding:clamp(64px,11vh,128px) 0;scroll-margin-top:84px;">
+    <div style="width:100%;max-width:1160px;margin:0 auto;padding:0 clamp(20px,5vw,56px);">
+      <div style="display:flex;flex-wrap:wrap;gap:clamp(34px,5vw,72px);align-items:center;">
+        <div data-reveal="" style="flex:1 1 380px;min-width:0;">
+          <p style="font-family:'Hanken Grotesk',sans-serif;font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#A85C2C;margin:0;">About</p>
+          <h2 style="font-family:'Spectral',serif;font-weight:700;font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.05;letter-spacing:-0.01em;margin:14px 0 0;color:#2A211A;text-wrap:balance;">Songs you know, and a few of my own.</h2>
+          <p style="font-family:'Hanken Grotesk',sans-serif;font-weight:400;font-size:clamp(1.05rem,1.6vw,1.2rem);line-height:1.65;color:rgba(42,33,26,0.7);margin:22px 0 0;max-width:560px;">I’m Cesar Cruz. A singer, guitarist and songwriter based in Hickory, North Carolina. I play the bars, bistros, breweries, markets and wedding floors of the Catawba Valley, weaving the songs people love together with a handful of originals of my own. Some nights it’s just me and a guitar; others it’s a full band. Either way, the set bends to fit the room.</p>
+          <div style="display:flex;align-items:center;gap:14px;margin-top:26px;flex-wrap:wrap;">
+            <span style="width:30px;height:1.5px;background:#BD6B38;flex:none;"></span>
+            <span style="font-family:'Hanken Grotesk',sans-serif;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(42,33,26,0.62);">Based in Hickory, NC — playing the Catawba Valley &amp; beyond</span>
+          </div>
+        </div>
+        <div data-reveal="" style="flex:0 1 380px;min-width:260px;">
+          <div style="position:relative;">
+            <div style="position:absolute;inset:0;transform:translate(16px,16px);border:1.5px solid #BD6B38;border-radius:3px;"></div>
+            <img src="media/about.jpg" alt="Portrait of Cesar Cruz in a rust fedora and sage shirt" style="position:relative;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 18%;border-radius:3px;box-shadow:0 30px 60px rgba(42,33,26,0.22);">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHAT YOU'LL HEAR ===================== -->
+  <section id="music" data-screen-label="What you'll hear" style="background:#221912;padding:clamp(64px,11vh,128px) 0;scroll-margin-top:84px;">
+    <div style="width:100%;max-width:1160px;margin:0 auto;padding:0 clamp(20px,5vw,56px);">
+      <div data-reveal="" style="max-width:640px;">
+        <p style="font-family:'Hanken Grotesk',sans-serif;font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#CE824A;margin:0;">What you’ll hear</p>
+        <h2 style="font-family:'Spectral',serif;font-weight:700;font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.05;letter-spacing:-0.01em;margin:14px 0 0;color:#F4EDDF;text-wrap:balance;">Songs the whole room knows.</h2>
+        <p style="font-family:'Hanken Grotesk',sans-serif;font-weight:400;font-size:clamp(1.02rem,1.5vw,1.18rem);line-height:1.6;color:rgba(243,234,219,0.66);margin:18px 0 0;">Seven decades of music, perfect for any room. From a laid-back acoustic brunch to a packed Saturday night, with a few of my own songs woven in. Here’s a taste of the set.</p>
+      </div>
+
+      <div data-reveal="" style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:clamp(30px,4vh,44px);">
+        <span style="display:inline-flex;align-items:center;gap:9px;padding:10px 17px;border:1px solid rgba(243,234,219,0.16);border-radius:999px;font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;font-weight:500;color:#EBE0CE;background:rgba(243,234,219,0.02);"><span style="width:6px;height:6px;border-radius:50%;background:#9AAA84;"></span>Acoustic Pop</span>
+        <span style="display:inline-flex;align-items:center;gap:9px;padding:10px 17px;border:1px solid rgba(243,234,219,0.16);border-radius:999px;font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;font-weight:500;color:#EBE0CE;background:rgba(243,234,219,0.02);"><span style="width:6px;height:6px;border-radius:50%;background:#BD6B38;"></span>Classic Rock</span>
+        <span style="display:inline-flex;align-items:center;gap:9px;padding:10px 17px;border:1px solid rgba(243,234,219,0.16);border-radius:999px;font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;font-weight:500;color:#EBE0CE;background:rgba(243,234,219,0.02);"><span style="width:6px;height:6px;border-radius:50%;background:#9AAA84;"></span>Soul &amp; Motown</span>
+        <span style="display:inline-flex;align-items:center;gap:9px;padding:10px 17px;border:1px solid rgba(243,234,219,0.16);border-radius:999px;font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;font-weight:500;color:#EBE0CE;background:rgba(243,234,219,0.02);"><span style="width:6px;height:6px;border-radius:50%;background:#BD6B38;"></span>Country</span>
+        <span style="display:inline-flex;align-items:center;gap:9px;padding:10px 17px;border:1px solid rgba(243,234,219,0.16);border-radius:999px;font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;font-weight:500;color:#EBE0CE;background:rgba(243,234,219,0.02);"><span style="width:6px;height:6px;border-radius:50%;background:#9AAA84;"></span>Folk &amp; Americana</span>
+        <span style="display:inline-flex;align-items:center;gap:9px;padding:10px 17px;border:1px solid rgba(243,234,219,0.16);border-radius:999px;font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;font-weight:500;color:#EBE0CE;background:rgba(243,234,219,0.02);"><span style="width:6px;height:6px;border-radius:50%;background:#BD6B38;"></span>R&amp;B</span>
+        
+        
+        </div>
+      <div data-reveal="" style="display:flex;justify-content:center;margin-top:16px;">
+        
+      </div>
+
+      <sc-if value="{{ showSetlist }}" hint-placeholder-val="{{ true }}">
+        <div data-reveal="" style="margin-top:clamp(34px,5vh,56px);background:#2A1F17;border:1px solid rgba(243,234,219,0.10);border-radius:5px;padding:clamp(24px,3.5vw,40px);">
+          <div style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px;border-bottom:1px solid rgba(243,234,219,0.10);padding-bottom:16px;margin-bottom:24px;">
+            <p style="font-family:'Hanken Grotesk',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#CE824A;margin:0;">Songs people request</p>
+            <p style="font-family:'Spectral',serif;font-style:italic;font-size:14px;color:rgba(243,234,219,0.5);margin:0;">a sample — full setlist &amp; special requests on booking</p>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:13px 44px;">
+            <div style="display:flex;align-items:baseline;gap:12px;"><span style="width:6px;height:6px;border-radius:50%;background:#BD6B38;flex:none;transform:translateY(-2px);"></span><span style="font-family:'Hanken Grotesk',sans-serif;font-size:15.5px;color:#F1E7D7;font-weight:500;line-height:1.35;">Ain’t No Sunshine <span style="color:rgba(243,234,219,0.46);font-weight:400;">· Bill Withers</span></span></div>
+            <div style="display:flex;align-items:baseline;gap:12px;"><span style="width:6px;height:6px;border-radius:50%;background:#BD6B38;flex:none;transform:translateY(-2px);"></span><span style="font-family:'Hanken Grotesk',sans-serif;font-size:15.5px;color:#F1E7D7;font-weight:500;line-height:1.35;">A Pirate Looks at 40&nbsp;<span style="color: rgba(243, 234, 219, 0.46); font-weight: 400;">· Jimmy Buffet</span></span></div>
+            <div style="display:flex;align-items:baseline;gap:12px;"><span style="width:6px;height:6px;border-radius:50%;background:#BD6B38;flex:none;transform:translateY(-2px);"></span><span style="font-family:'Hanken Grotesk',sans-serif;font-size:15.5px;color:#F1E7D7;font-weight:500;line-height:1.35;">Better Together <span style="color:rgba(243,234,219,0.46);font-weight:400;">· Jack Johnson</span></span></div>
+            <div style="display:flex;align-items:baseline;gap:12px;"><span style="width:6px;height:6px;border-radius:50%;background:#BD6B38;flex:none;transform:translateY(-2px);"></span><span style="font-family:'Hanken Grotesk',sans-serif;font-size:15.5px;color:#F1E7D7;font-weight:500;line-height:1.35;">Feathered Indians&nbsp;<span style="color: rgba(243, 234, 219, 0.46); font-weight: 400;">· Tyler Childers</span></span></div>
+            <div style="display:flex;align-items:baseline;gap:12px;"><span style="width:6px;height:6px;border-radius:50%;background:#BD6B38;flex:none;transform:translateY(-2px);"></span><span style="font-family:'Hanken Grotesk',sans-serif;font-size:15.5px;color:#F1E7D7;font-weight:500;line-height:1.35;">Valerie <span style="color:rgba(243,234,219,0.46);font-weight:400;">· Amy Winehouse</span></span></div>
+            <div style="display:flex;align-items:baseline;gap:12px;"><span style="width:6px;height:6px;border-radius:50%;background:#BD6B38;flex:none;transform:translateY(-2px);"></span><span style="font-family:'Hanken Grotesk',sans-serif;font-size:15.5px;color:#F1E7D7;font-weight:500;line-height:1.35;">Wagon Wheel <span style="color:rgba(243,234,219,0.46);font-weight:400;">· Old Crow Medicine Show</span></span></div>
+            <div style="display:flex;align-items:baseline;gap:12px;"><span style="width:6px;height:6px;border-radius:50%;background:#BD6B38;flex:none;transform:translateY(-2px);"></span><span style="font-family:'Hanken Grotesk',sans-serif;font-size:15.5px;color:#F1E7D7;font-weight:500;line-height:1.35;">Riptide <span style="color:rgba(243,234,219,0.46);font-weight:400;">· Vance Joy</span></span></div>
+            <div style="display:flex;align-items:baseline;gap:12px;"><span style="width:6px;height:6px;border-radius:50%;background:#BD6B38;flex:none;transform:translateY(-2px);"></span><span style="font-family:'Hanken Grotesk',sans-serif;font-size:15.5px;color:#F1E7D7;font-weight:500;line-height:1.35;">(Sittin’ On) The Dock of the Bay <span style="color:rgba(243,234,219,0.46);font-weight:400;">· Otis Redding</span></span></div>
+            <div style="display:flex;align-items:baseline;gap:12px;"><span style="width:6px;height:6px;border-radius:50%;background:#BD6B38;flex:none;transform:translateY(-2px);"></span><span style="font-family:'Hanken Grotesk',sans-serif;font-size:15.5px;color:#F1E7D7;font-weight:500;line-height:1.35;">Don't Let me Down&nbsp;<span style="color: rgba(243, 234, 219, 0.46); font-weight: 400;">· The Beatles</span></span></div>
+            <div style="display:flex;align-items:baseline;gap:12px;"><span style="width:6px;height:6px;border-radius:50%;background:#BD6B38;flex:none;transform:translateY(-2px);"></span><span style="font-family:'Hanken Grotesk',sans-serif;font-size:15.5px;color:#F1E7D7;font-weight:500;line-height:1.35;">Stand By Me <span style="color:rgba(243,234,219,0.46);font-weight:400;">· Ben E. King</span></span></div>
+            <div style="display:flex;align-items:baseline;gap:12px;"><span style="width:6px;height:6px;border-radius:50%;background:#BD6B38;flex:none;transform:translateY(-2px);"></span><span style="font-family:'Hanken Grotesk',sans-serif;font-size:15.5px;color:#F1E7D7;font-weight:500;line-height:1.35;">Ho Hey <span style="color:rgba(243,234,219,0.46);font-weight:400;">· The Lumineers</span></span></div>
+            <div style="display:flex;align-items:baseline;gap:12px;"><span style="width:6px;height:6px;border-radius:50%;background:#BD6B38;flex:none;transform:translateY(-2px);"></span><span style="font-family:'Hanken Grotesk',sans-serif;font-size:15.5px;color:#F1E7D7;font-weight:500;line-height:1.35;">Hey There Delilah <span style="color:rgba(243,234,219,0.46);font-weight:400;">· Plain White T’s</span></span></div>
+            <div style="display:flex;align-items:baseline;gap:12px;"><span style="width:6px;height:6px;border-radius:50%;background:#BD6B38;flex:none;transform:translateY(-2px);"></span><span style="font-family:'Hanken Grotesk',sans-serif;font-size:15.5px;color:#F1E7D7;font-weight:500;line-height:1.35;">Take It Easy <span style="color:rgba(243,234,219,0.46);font-weight:400;">· Eagles</span></span></div>
+            <div style="display:flex;align-items:baseline;gap:12px;"><span style="width:6px;height:6px;border-radius:50%;background:#BD6B38;flex:none;transform:translateY(-2px);"></span><span style="font-family:'Hanken Grotesk',sans-serif;font-size:15.5px;color:#F1E7D7;font-weight:500;line-height:1.35;">I’m Yours <span style="color:rgba(243,234,219,0.46);font-weight:400;">· Jason Mraz</span></span></div>
+          </div>
+        </div>
+      </sc-if>
+    </div>
+  </section>
+
+  <!-- ===================== BOOK HIM FOR ===================== -->
+  <section id="lineups" data-screen-label="Book him for" style="background:#ECE3D1;color:#2A211A;padding:clamp(64px,11vh,128px) 0;scroll-margin-top:84px;">
+    <div style="width:100%;max-width:1160px;margin:0 auto;padding:0 clamp(20px,5vw,56px);">
+      <div data-reveal="" style="max-width:640px;">
+        <p style="font-family:'Hanken Grotesk',sans-serif;font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#A85C2C;margin:0;">Book him for</p>
+        <h2 style="font-family:'Spectral',serif;font-weight:700;font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.05;letter-spacing:-0.01em;margin:14px 0 0;color:#2A211A;text-wrap:balance;">From a corner stool to the main stage.</h2>
+        <p style="font-family:'Hanken Grotesk',sans-serif;font-weight:400;font-size:clamp(1.02rem,1.5vw,1.18rem);line-height:1.6;color:rgba(42,33,26,0.64);margin:18px 0 0;">Wherever there’s room for live music, there’s a lineup that fits — sized to your space, your night and your budget.</p>
+      </div>
+
+      <div data-reveal="" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(236px,1fr));gap:14px;margin-top:clamp(34px,5vh,52px);">
+        <div style="background:linear-gradient(180deg,#EFE8D8 0%,#E1D5BE 100%);border:1px solid rgba(42,33,26,0.08);border-top:3px solid rgba(189,107,56,0.30);border-radius:5px;padding:clamp(24px,2.6vw,30px);display:flex;flex-direction:column;gap:11px;min-height:182px;box-shadow:0 1px 2px rgba(42,33,26,0.04),0 8px 22px rgba(42,33,26,0.07);transition:transform .32s cubic-bezier(.2,.7,.2,1),box-shadow .32s ease,border-top-color .32s ease;" style-hover="transform:translateY(-6px);box-shadow:0 6px 14px rgba(42,33,26,0.08),0 24px 50px rgba(42,33,26,0.17);border-top-color:#BD6B38">
+          <span style="width:16px;height:16px;background:#BD6B38;transform:rotate(45deg);border-radius:2px;box-shadow:0 3px 8px rgba(189,107,56,0.40);"></span>
+          <h3 style="font-family:'Spectral',serif;font-weight:600;font-size:1.2rem;color:#2A211A;margin:6px 0 0;">Bars &amp; Breweries</h3>
+          <p style="font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;line-height:1.5;color:rgba(42,33,26,0.62);margin:0;">Taproom sets and patio nights that keep the regulars around.</p>
+        </div>
+        
+        <div style="background:linear-gradient(180deg,#EFE8D8 0%,#E1D5BE 100%);border:1px solid rgba(42,33,26,0.08);border-top:3px solid rgba(189,107,56,0.30);border-radius:5px;padding:clamp(24px,2.6vw,30px);display:flex;flex-direction:column;gap:11px;min-height:182px;box-shadow:0 1px 2px rgba(42,33,26,0.04),0 8px 22px rgba(42,33,26,0.07);transition:transform .32s cubic-bezier(.2,.7,.2,1),box-shadow .32s ease,border-top-color .32s ease;" style-hover="transform:translateY(-6px);box-shadow:0 6px 14px rgba(42,33,26,0.08),0 24px 50px rgba(42,33,26,0.17);border-top-color:#BD6B38">
+          <span style="width:16px;height:16px;background:#BD6B38;transform:rotate(45deg);border-radius:2px;box-shadow:0 3px 8px rgba(189,107,56,0.40);"></span>
+          <h3 style="font-family:'Spectral',serif;font-weight:600;font-size:1.2rem;color:#2A211A;margin:6px 0 0;">Private Parties</h3>
+          <p style="font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;line-height:1.5;color:rgba(42,33,26,0.62);margin:0;">Birthdays, weddings, and backyard get-togethers.</p>
+        </div>
+        <div style="background:linear-gradient(180deg,#EFE8D8 0%,#E1D5BE 100%);border:1px solid rgba(42,33,26,0.08);border-top:3px solid rgba(189,107,56,0.30);border-radius:5px;padding:clamp(24px,2.6vw,30px);display:flex;flex-direction:column;gap:11px;min-height:182px;box-shadow:0 1px 2px rgba(42,33,26,0.04),0 8px 22px rgba(42,33,26,0.07);transition:transform .32s cubic-bezier(.2,.7,.2,1),box-shadow .32s ease,border-top-color .32s ease;" style-hover="transform:translateY(-6px);box-shadow:0 6px 14px rgba(42,33,26,0.08),0 24px 50px rgba(42,33,26,0.17);border-top-color:#BD6B38">
+          <span style="width:16px;height:16px;background:#BD6B38;transform:rotate(45deg);border-radius:2px;box-shadow:0 3px 8px rgba(189,107,56,0.40);"></span>
+          <h3 style="font-family:'Spectral',serif;font-weight:600;font-size:1.2rem;color:#2A211A;margin:6px 0 0;">Corporate Events</h3>
+          <p style="font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;line-height:1.5;color:rgba(42,33,26,0.62);margin:0;">Openings, mixers and company celebrations.</p>
+        </div>
+        <div style="background:linear-gradient(180deg,#EFE8D8 0%,#E1D5BE 100%);border:1px solid rgba(42,33,26,0.08);border-top:3px solid rgba(189,107,56,0.30);border-radius:5px;padding:clamp(24px,2.6vw,30px);display:flex;flex-direction:column;gap:11px;min-height:182px;box-shadow:0 1px 2px rgba(42,33,26,0.04),0 8px 22px rgba(42,33,26,0.07);transition:transform .32s cubic-bezier(.2,.7,.2,1),box-shadow .32s ease,border-top-color .32s ease;" style-hover="transform:translateY(-6px);box-shadow:0 6px 14px rgba(42,33,26,0.08),0 24px 50px rgba(42,33,26,0.17);border-top-color:#BD6B38">
+          <span style="width:16px;height:16px;background:#BD6B38;transform:rotate(45deg);border-radius:2px;box-shadow:0 3px 8px rgba(189,107,56,0.40);"></span>
+          <h3 style="font-family:'Spectral',serif;font-weight:600;font-size:1.2rem;color:#2A211A;margin:6px 0 0;">Farmers Markets</h3>
+          <p style="font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;line-height:1.5;color:rgba(42,33,26,0.62);margin:0;">Easygoing daytime sound for vendors and crowds.</p>
+        </div>
+        <div style="background:linear-gradient(180deg,#EFE8D8 0%,#E1D5BE 100%);border:1px solid rgba(42,33,26,0.08);border-top:3px solid rgba(189,107,56,0.30);border-radius:5px;padding:clamp(24px,2.6vw,30px);display:flex;flex-direction:column;gap:11px;min-height:182px;box-shadow:0 1px 2px rgba(42,33,26,0.04),0 8px 22px rgba(42,33,26,0.07);transition:transform .32s cubic-bezier(.2,.7,.2,1),box-shadow .32s ease,border-top-color .32s ease;" style-hover="transform:translateY(-6px);box-shadow:0 6px 14px rgba(42,33,26,0.08),0 24px 50px rgba(42,33,26,0.17);border-top-color:#BD6B38">
+          <span style="width:16px;height:16px;background:#BD6B38;transform:rotate(45deg);border-radius:2px;box-shadow:0 3px 8px rgba(189,107,56,0.40);"></span>
+          <h3 style="font-family:'Spectral',serif;font-weight:600;font-size:1.2rem;color:#2A211A;margin:6px 0 0;">Coffeehouses</h3>
+          <p style="font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;line-height:1.5;color:rgba(42,33,26,0.62);margin:0;">Intimate acoustic sets that fit a quieter room.</p>
+        </div>
+        <div style="background:linear-gradient(180deg,#EFE8D8 0%,#E1D5BE 100%);border:1px solid rgba(42,33,26,0.08);border-top:3px solid rgba(189,107,56,0.30);border-radius:5px;padding:clamp(24px,2.6vw,30px);display:flex;flex-direction:column;gap:11px;min-height:182px;box-shadow:0 1px 2px rgba(42,33,26,0.04),0 8px 22px rgba(42,33,26,0.07);transition:transform .32s cubic-bezier(.2,.7,.2,1),box-shadow .32s ease,border-top-color .32s ease;" style-hover="transform:translateY(-6px);box-shadow:0 6px 14px rgba(42,33,26,0.08),0 24px 50px rgba(42,33,26,0.17);border-top-color:#BD6B38">
+          <span style="width:16px;height:16px;background:#BD6B38;transform:rotate(45deg);border-radius:2px;box-shadow:0 3px 8px rgba(189,107,56,0.40);"></span>
+          <h3 style="font-family:'Spectral',serif;font-weight:600;font-size:1.2rem;color:#2A211A;margin:6px 0 0;">Open Mic / Jam Hosting</h3>
+          <p style="font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;line-height:1.5;color:rgba(42,33,26,0.62);margin:0;">Weekly open mic and acoustic jams, hosted and run.</p>
+        </div>
+      </div>
+
+      <div data-reveal="" style="margin-top:clamp(48px,7vh,84px);">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+          <h3 style="font-family:'Spectral',serif;font-weight:700;font-size:clamp(1.4rem,2.6vw,1.9rem);color:#2A211A;margin:0;white-space:nowrap;">Choose your lineup</h3>
+          <span style="flex:1;height:1px;background:rgba(42,33,26,0.16);"></span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:14px;">
+          <div style="background:#E5DAC6;border:1px solid rgba(42,33,26,0.10);border-radius:4px;padding:clamp(22px,2.5vw,28px);display:flex;flex-direction:column;gap:13px;flex:1 1 220px;max-width:320px;">
+            <div style="display:flex;gap:6px;align-items:center;">
+              <span style="width:11px;height:11px;border-radius:50%;background:#BD6B38;"></span>
+              <span style="width:11px;height:11px;border-radius:50%;border:1.5px solid rgba(42,33,26,0.26);"></span>
+              <span style="width:11px;height:11px;border-radius:50%;border:1.5px solid rgba(42,33,26,0.26);"></span>
+              <span style="width:11px;height:11px;border-radius:50%;border:1.5px solid rgba(42,33,26,0.26);"></span>
+            </div>
+            <h4 style="font-family:'Spectral',serif;font-weight:700;font-size:1.5rem;color:#2A211A;margin:0;">Solo</h4>
+            <p style="font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;line-height:1.5;color:rgba(42,33,26,0.64);margin:0;flex:1;">Just me and a guitar: Coffeehouses, cocktail hours and intimate rooms.</p>
+            <a href="#contact" onClick="{{ pickSolo }}" style="font-family:'Hanken Grotesk',sans-serif;font-size:14px;font-weight:600;color:#A85C2C;letter-spacing:.01em;transition:gap .2s ease;display:inline-flex;align-items:center;gap:6px;" style-hover="gap:11px">Request this lineup →</a>
+          </div>
+          <div style="background:#E5DAC6;border:1px solid rgba(42,33,26,0.10);border-radius:4px;padding:clamp(22px,2.5vw,28px);display:flex;flex-direction:column;gap:13px;flex:1 1 220px;max-width:320px;">
+            <div style="display:flex;gap:6px;align-items:center;">
+              <span style="width:11px;height:11px;border-radius:50%;background:#BD6B38;"></span>
+              <span style="width:11px;height:11px;border-radius:50%;background:#BD6B38;"></span>
+              <span style="width:11px;height:11px;border-radius:50%;border:1.5px solid rgba(42,33,26,0.26);"></span>
+              <span style="width:11px;height:11px;border-radius:50%;border:1.5px solid rgba(42,33,26,0.26);"></span>
+            </div>
+            <h4 style="font-family:'Spectral',serif;font-weight:700;font-size:1.5rem;color:#2A211A;margin:0;">Duo</h4>
+            <p style="font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;line-height:1.5;color:rgba(42,33,26,0.64);margin:0;flex:1;">Two players, fuller sound:<br>Great for patios, bistros and ceremonies.</p>
+            <a href="#contact" onClick="{{ pickDuo }}" style="font-family:'Hanken Grotesk',sans-serif;font-size:14px;font-weight:600;color:#A85C2C;letter-spacing:.01em;transition:gap .2s ease;display:inline-flex;align-items:center;gap:6px;" style-hover="gap:11px">Request this lineup →</a>
+          </div>
+          <div style="background:#E5DAC6;border:1px solid rgba(42,33,26,0.10);border-radius:4px;padding:clamp(22px,2.5vw,28px);display:flex;flex-direction:column;gap:13px;flex:1 1 220px;max-width:320px;">
+            <div style="display:flex;gap:6px;align-items:center;">
+              <span style="width:11px;height:11px;border-radius:50%;background:#BD6B38;"></span>
+              <span style="width:11px;height:11px;border-radius:50%;background:#BD6B38;"></span>
+              <span style="width:11px;height:11px;border-radius:50%;background:#BD6B38;"></span>
+              <span style="width:11px;height:11px;border-radius:50%;border:1.5px solid rgba(42,33,26,0.26);"></span>
+            </div>
+            <h4 style="font-family:'Spectral',serif;font-weight:700;font-size:1.5rem;color:#2A211A;margin:0;">Trio</h4>
+            <p style="font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;line-height:1.5;color:rgba(42,33,26,0.64);margin:0;flex:1;">Added rhythm and harmony: Enough to lift a busy bar or party.</p>
+            <a href="#contact" onClick="{{ pickTrio }}" style="font-family:'Hanken Grotesk',sans-serif;font-size:14px;font-weight:600;color:#A85C2C;letter-spacing:.01em;transition:gap .2s ease;display:inline-flex;align-items:center;gap:6px;" style-hover="gap:11px">Request this lineup →</a>
+          </div>
+          <div style="background:#2A1F17;border:1px solid rgba(189,107,56,0.4);border-radius:4px;padding:clamp(22px,2.5vw,28px);display:flex;flex-direction:column;gap:13px;flex:1 1 220px;max-width:320px;">
+            <div style="display:flex;gap:6px;align-items:center;">
+              <span style="width:11px;height:11px;border-radius:50%;background:#E6B98A;"></span>
+              <span style="width:11px;height:11px;border-radius:50%;background:#E6B98A;"></span>
+              <span style="width:11px;height:11px;border-radius:50%;background:#E6B98A;"></span>
+              <span style="width:11px;height:11px;border-radius:50%;background:#E6B98A;"></span>
+            </div>
+            <h4 style="font-family:'Spectral',serif;font-weight:700;font-size:1.5rem;color:#F4EDDF;margin:0;">Full Band</h4>
+            <p style="font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;line-height:1.5;color:rgba(243,234,219,0.7);margin:0;flex:1;">The whole sound, built to fill a wedding reception or festival stage.</p>
+            <a href="#contact" onClick="{{ pickBand }}" style="font-family:'Hanken Grotesk',sans-serif;font-size:14px;font-weight:600;color:#E6B98A;letter-spacing:.01em;transition:gap .2s ease;display:inline-flex;align-items:center;gap:6px;" style-hover="gap:11px">Request this lineup →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LISTEN / WATCH ===================== -->
+  <section id="listen" data-screen-label="Listen" style="background:#1C140E;padding:clamp(64px,11vh,128px) 0;scroll-margin-top:84px;">
+    <div style="width:100%;max-width:1000px;margin:0 auto;padding:0 clamp(20px,5vw,56px);">
+      <div data-reveal="" style="text-align:center;max-width:620px;margin:0 auto;">
+        <p style="font-family:'Hanken Grotesk',sans-serif;font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#CE824A;margin:0;">Listen &amp; watch</p>
+        <h2 style="font-family:'Spectral',serif;font-weight:700;font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.05;letter-spacing:-0.01em;margin:14px 0 0;color:#F4EDDF;">Hear it for yourself.</h2>
+        <p style="font-family:'Hanken Grotesk',sans-serif;font-weight:400;font-size:clamp(1.02rem,1.5vw,1.18rem);line-height:1.6;color:rgba(243,234,219,0.66);margin:18px 0 0;">A few minutes of listening says more than I could write here.</p>
+      </div>
+
+      <div data-reveal="" style="margin-top:clamp(34px,5vh,52px);">
+        <sc-if value="{{ hasVideo }}" hint-placeholder-val="{{ false }}">
+          <div style="position:relative;aspect-ratio:16/9;border-radius:6px;overflow:hidden;border:1px solid rgba(243,234,219,0.12);background:#000;box-shadow:0 40px 80px rgba(0,0,0,0.4);">
+            <iframe src="{{ videoUrl }}" title="Cesar Cruz — live" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="position:absolute;inset:0;width:100%;height:100%;border:0;"></iframe>
+          </div>
+        </sc-if>
+        <sc-if value="{{ noVideo }}" hint-placeholder-val="{{ true }}">
+          <div style="position:relative;aspect-ratio:16/9;border-radius:6px;overflow:hidden;border:1px solid rgba(243,234,219,0.12);box-shadow:0 40px 80px rgba(0,0,0,0.4);">
+            <img src="media/live.jpg" alt="Cesar Cruz playing acoustic guitar live" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%;">
+            <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(18,12,7,0.35) 0%, rgba(18,12,7,0.2) 45%, rgba(18,12,7,0.78) 100%);"></div>
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+              <div style="display:flex;align-items:center;justify-content:center;width:clamp(64px,10vw,88px);height:clamp(64px,10vw,88px);border-radius:50%;background:#BD6B38;box-shadow:0 14px 40px rgba(0,0,0,0.45);transition:transform .25s ease,background .25s ease;" style-hover="transform:scale(1.07);background:#C9763F">
+                <span style="width:0;height:0;border-style:solid;border-width:13px 0 13px 22px;border-color:transparent transparent transparent #FBF6EC;margin-left:5px;"></span>
+              </div>
+            </div>
+            <div style="position:absolute;left:0;right:0;bottom:0;padding:14px 18px;display:flex;align-items:center;gap:10px;background:linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);">
+              <span style="font-family:'Hanken Grotesk',sans-serif;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#E6B98A;">▶ Featured clip</span>
+              <span style="font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;font-size:12px;color:rgba(243,234,219,0.62);">embed a live video here — YouTube · Instagram Reel · SoundCloud</span>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+
+      <div data-reveal="" style="margin-top:clamp(20px,3vh,32px);">
+        <p style="text-align:center;font-family:'Hanken Grotesk',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#CE824A;margin:0 0 14px;">Stream the music — originals &amp; more</p>
+        <iframe title="Cesar Cruz on Spotify" src="https://open.spotify.com/embed/artist/2GRRKOjiKkZ54y1Z2ZuFpp?utm_source=generator" width="100%" height="352" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" style="border:0;border-radius:12px;display:block;width:100%;"></iframe>
+      </div>
+
+      <p data-reveal="" style="text-align:center;font-family:'Hanken Grotesk',sans-serif;font-size:15px;color:rgba(243,234,219,0.6);margin:24px 0 0;">More clips on
+        <a href="https://www.instagram.com/cesarjcmusic/" target="_blank" rel="noopener" style="color:#E6B98A;border-bottom:1px solid rgba(230,185,138,0.4);" style-hover="color:#F0C89C">Instagram</a> &amp;
+        <a href="https://www.facebook.com/cesar.cruz.56884761" target="_blank" rel="noopener" style="color:#E6B98A;border-bottom:1px solid rgba(230,185,138,0.4);" style-hover="color:#F0C89C">Facebook</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT / BOOK ===================== -->
+  <section id="contact" data-screen-label="Contact" style="background:#ECE3D1;color:#2A211A;padding:clamp(64px,11vh,128px) 0;scroll-margin-top:84px;">
+    <div style="width:100%;max-width:1160px;margin:0 auto;padding:0 clamp(20px,5vw,56px);">
+      <div data-reveal="" style="max-width:640px;">
+        <p style="font-family:'Hanken Grotesk',sans-serif;font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#A85C2C;margin:0;">Booking</p>
+        <h2 style="font-family:'Spectral',serif;font-weight:700;font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.05;letter-spacing:-0.01em;margin:14px 0 0;color:#2A211A;text-wrap:balance;">Let’s get your date on the calendar.</h2>
+        <p style="font-family:'Hanken Grotesk',sans-serif;font-weight:400;font-size:clamp(1.02rem,1.5vw,1.18rem);line-height:1.6;color:rgba(42,33,26,0.64);margin:18px 0 0;">Tell me a bit about your event and I’ll get back to you within a day.</p>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:clamp(28px,4vw,52px);align-items:stretch;margin-top:clamp(34px,5vh,52px);">
+        <form ref="{{ formRef }}" onSubmit="{{ onSubmit }}" data-reveal="" style="flex:1 1 440px;display:flex;flex-direction:column;gap:18px;min-width:0;color-scheme:light;">
+          <div>
+            <label for="cc-name" style="display:block;font-family:'Hanken Grotesk',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(42,33,26,0.6);margin-bottom:8px;">Your name</label>
+            <input id="cc-name" name="name" type="text" required="" autocomplete="name" placeholder="Jane Doe" style="width:100%;background:#F5EFE1;border:1px solid rgba(42,33,26,0.2);border-radius:3px;padding:13px 15px;color:#2A211A;outline:none;transition:border-color .25s ease,box-shadow .25s ease;" style-focus="border-color:#BD6B38;box-shadow:0 0 0 3px rgba(189,107,56,0.18)">
+          </div>
+          <div>
+            <label for="cc-email" style="display:block;font-family:'Hanken Grotesk',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(42,33,26,0.6);margin-bottom:8px;">Email</label>
+            <input id="cc-email" name="email" type="email" required="" autocomplete="email" placeholder="you@email.com" style="width:100%;background:#F5EFE1;border:1px solid rgba(42,33,26,0.2);border-radius:3px;padding:13px 15px;color:#2A211A;outline:none;transition:border-color .25s ease,box-shadow .25s ease;" style-focus="border-color:#BD6B38;box-shadow:0 0 0 3px rgba(189,107,56,0.18)">
+          </div>
+          <div style="display:flex;gap:14px;flex-wrap:wrap;">
+            <div style="flex:1 1 170px;min-width:0;">
+              <label for="cc-date" style="display:block;font-family:'Hanken Grotesk',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(42,33,26,0.6);margin-bottom:8px;">Event date</label>
+              <input id="cc-date" name="date" type="date" style="width:100%;background:#F5EFE1;border:1px solid rgba(42,33,26,0.2);border-radius:3px;padding:13px 15px;color:#2A211A;outline:none;transition:border-color .25s ease,box-shadow .25s ease;" style-focus="border-color:#BD6B38;box-shadow:0 0 0 3px rgba(189,107,56,0.18)">
+            </div>
+            <div style="flex:1 1 170px;min-width:0;">
+              <label for="cc-etype" style="display:block;font-family:'Hanken Grotesk',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(42,33,26,0.6);margin-bottom:8px;">Event type</label>
+              <select id="cc-etype" name="etype" style="width:100%;background:#F5EFE1;border:1px solid rgba(42,33,26,0.2);border-radius:3px;padding:13px 15px;color:#2A211A;outline:none;transition:border-color .25s ease,box-shadow .25s ease;" style-focus="border-color:#BD6B38;box-shadow:0 0 0 3px rgba(189,107,56,0.18)">
+                <option value="">Choose one…</option>
+                <option>Bar / Brewery</option>
+                <option>Wedding / Ceremony</option>
+                <option>Private Party</option>
+                <option>Corporate / Event</option>
+                <option>Farmers Market</option>
+                <option>Coffeehouse</option>
+                <option>Open Mic / Jam</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="cc-lineup" style="display:block;font-family:'Hanken Grotesk',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(42,33,26,0.6);margin-bottom:8px;">Lineup</label>
+            <select id="cc-lineup" name="lineup" ref="{{ lineupRef }}" style="width:100%;background:#F5EFE1;border:1px solid rgba(42,33,26,0.2);border-radius:3px;padding:13px 15px;color:#2A211A;outline:none;transition:border-color .25s ease,box-shadow .25s ease;" style-focus="border-color:#BD6B38;box-shadow:0 0 0 3px rgba(189,107,56,0.18)">
+              <option>Not sure yet</option>
+              <option>Solo</option>
+              <option>Duo</option>
+              <option>Trio</option>
+              <option>Full Band</option>
+            </select>
+          </div>
+          <div>
+            <label for="cc-msg" style="display:block;font-family:'Hanken Grotesk',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(42,33,26,0.6);margin-bottom:8px;">Tell me about your event</label>
+            <textarea id="cc-msg" name="message" rows="4" placeholder="Venue, time, vibe you’re after, anything else…" style="width:100%;background:#F5EFE1;border:1px solid rgba(42,33,26,0.2);border-radius:3px;padding:13px 15px;color:#2A211A;outline:none;resize:vertical;line-height:1.5;transition:border-color .25s ease,box-shadow .25s ease;" style-focus="border-color:#BD6B38;box-shadow:0 0 0 3px rgba(189,107,56,0.18)"></textarea>
+          </div>
+          <button type="submit" style="width:100%;display:inline-flex;align-items:center;justify-content:center;gap:9px;background:#BD6B38;color:#FBF6EC;font-family:'Hanken Grotesk',sans-serif;font-weight:700;font-size:15.5px;letter-spacing:.02em;padding:16px 26px;border-radius:3px;border:1px solid #BD6B38;transition:background .25s ease,border-color .25s ease,transform .2s ease;" style-hover="background:#A85C2C;border-color:#A85C2C;transform:translateY(-2px)">Send booking request</button>
+          
+          <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+            <div style="background:rgba(124,138,104,0.16);border:1px solid rgba(124,138,104,0.5);border-radius:4px;padding:14px 16px;font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;line-height:1.5;color:#3E4630;">Thanks — your email app should open with the details ready to send. If it doesn’t, reach me directly at <a href="{{ mailtoBooking }}" style="color:#A85C2C;">{{ bookingEmail }}</a>.</div>
+          </sc-if>
+        </form>
+
+        <aside data-reveal="" style="flex:1 1 300px;max-width:400px;display:flex;min-width:0;">
+          <div style="background:#E4D8C2;border:1px solid rgba(42,33,26,0.12);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;width:100%;">
+            <img src="media/press.jpg" alt="Cesar Cruz leaning against a railing" style="width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center 26%;">
+            <div style="padding:clamp(22px,3vw,30px);display:flex;flex-direction:column;gap:16px;">
+              <p style="font-family:'Hanken Grotesk',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(42,33,26,0.55);margin:0;">Reach out directly</p>
+              
+              <div style="display:flex;flex-wrap:wrap;gap:18px;">
+                <a href="https://www.instagram.com/cesarjcmusic/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;font-weight:600;color:#2A211A;" style-hover="color:#A85C2C"><span style="width:6px;height:6px;border-radius:50%;background:#BD6B38;"></span>Instagram</a>
+                <a href="https://www.facebook.com/cesar.cruz.56884761" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;font-weight:600;color:#2A211A;" style-hover="color:#A85C2C"><span style="width:6px;height:6px;border-radius:50%;background:#9AAA84;"></span>Facebook</a>
+              </div>
+              <span style="height:1px;background:rgba(42,33,26,0.12);"></span>
+              <p style="font-family:'Hanken Grotesk',sans-serif;font-size:14px;line-height:1.6;color:rgba(42,33,26,0.6);margin:0;">Serving Hickory · Conover · Lincolnton · Asheville · Charlotte and across the Catawba Valley.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer style="background:#160F0A;padding:clamp(52px,8vh,88px) 0 34px;border-top:1px solid rgba(243,234,219,0.08);">
+    <div style="width:100%;max-width:1160px;margin:0 auto;padding:0 clamp(20px,5vw,56px);">
+      <div style="display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between;align-items:flex-start;">
+        <div style="max-width:360px;">
+          <div style="display:flex;align-items:center;gap:13px;margin-bottom:16px;">
+            <img src="media/logo.png" alt="Cesar Cruz monogram" style="width:46px;height:46px;object-fit:contain;">
+            <span style="font-family:'Spectral',serif;font-weight:600;font-size:18px;letter-spacing:.18em;color:#F3EADB;">CESAR CRUZ</span>
+          </div>
+          <p style="font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;line-height:1.6;color:rgba(243,234,219,0.55);margin:0;">Live music &amp; original songs for bars, weddings &amp; events.</p>
+        </div>
+        <div style="display:flex;gap:clamp(36px,6vw,80px);flex-wrap:wrap;">
+          <div style="display:flex;flex-direction:column;gap:11px;">
+            <p style="font-family:'Hanken Grotesk',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(243,234,219,0.42);margin:0 0 4px;">Explore</p>
+            <a href="#about" style="font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;color:rgba(243,234,219,0.74);" style-hover="color:#E6B98A">About</a>
+            <a href="#music" style="font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;color:rgba(243,234,219,0.74);" style-hover="color:#E6B98A">What you’ll hear</a>
+            <a href="#lineups" style="font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;color:rgba(243,234,219,0.74);" style-hover="color:#E6B98A">Book him for</a>
+            <a href="#listen" style="font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;color:rgba(243,234,219,0.74);" style-hover="color:#E6B98A">Listen</a>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:11px;">
+            <p style="font-family:'Hanken Grotesk',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(243,234,219,0.42);margin:0 0 4px;">Connect</p>
+            
+            <a href="https://www.instagram.com/cesarjcmusic/" target="_blank" rel="noopener" style="font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;color:rgba(243,234,219,0.74);" style-hover="color:#E6B98A">Instagram</a>
+            <a href="https://www.facebook.com/cesar.cruz.56884761" target="_blank" rel="noopener" style="font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;color:rgba(243,234,219,0.74);" style-hover="color:#E6B98A">Facebook</a>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:11px;max-width:180px;">
+            <p style="font-family:'Hanken Grotesk',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(243,234,219,0.42);margin:0 0 4px;">Based in</p>
+            <p style="font-family:'Hanken Grotesk',sans-serif;font-size:14.5px;line-height:1.6;color:rgba(243,234,219,0.74);margin:0;">Hickory, NC&nbsp;</p>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:clamp(40px,6vh,64px);padding-top:22px;border-top:1px solid rgba(243,234,219,0.08);display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;align-items:center;">
+        <p style="font-family:'Hanken Grotesk',sans-serif;font-size:13px;color:rgba(243,234,219,0.42);margin:0;">© 2026 Cesar Cruz</p>
+        <p style="font-family:'Hanken Grotesk',sans-serif;font-size:13px;color:rgba(243,234,219,0.42);margin:0;">Booking inquiries welcome year-round.</p>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;bookingEmail&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;booking@cesarcruzmusic.com&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;videoEmbedUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://www.youtube.com/embed/260GFp8UsPc?si=i0_MuJVFFMVDbXgr&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;showSetlist&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { sent: false };
+  rootRef = React.createRef();
+  navRef = React.createRef();
+  formRef = React.createRef();
+  lineupRef = React.createRef();
+
+  componentDidMount() {
+    const root = this.rootRef.current;
+    if (root) {
+      const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const els = Array.prototype.slice.call(root.querySelectorAll('[data-reveal]'));
+      if (!reduce) {
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach((en) => {
+            if (en.isIntersecting) {
+              en.target.style.opacity = '1';
+              en.target.style.transform = 'none';
+              io.unobserve(en.target);
+            }
+          });
+        }, { threshold: 0.1, rootMargin: '0px 0px -7% 0px' });
+        const vh = window.innerHeight || 800;
+        els.forEach((el) => {
+          const r = el.getBoundingClientRect();
+          if (r.top < vh * 0.9) return; // already visible -> no hide, no flash
+          el.style.opacity = '0';
+          el.style.transform = 'translateY(22px)';
+          el.style.transition = 'opacity .85s cubic-bezier(.2,.7,.2,1), transform .85s cubic-bezier(.2,.7,.2,1)';
+          el.style.willChange = 'opacity, transform';
+          io.observe(el);
+        });
+        this._io = io;
+        this._fallback = setTimeout(() => {
+          els.forEach((el) => { el.style.opacity = '1'; el.style.transform = 'none'; });
+        }, 4000);
+      }
+    }
+    const nav = this.navRef.current;
+    if (nav) {
+      const onScroll = () => {
+        const s = window.scrollY || window.pageYOffset || 0;
+        if (s > 36) {
+          nav.style.background = 'rgba(24,16,11,0.88)';
+          nav.style.backdropFilter = 'blur(12px)';
+          nav.style.webkitBackdropFilter = 'blur(12px)';
+          nav.style.boxShadow = '0 1px 0 rgba(243,234,219,0.08)';
+          nav.style.paddingTop = '12px';
+          nav.style.paddingBottom = '12px';
+        } else {
+          nav.style.background = 'transparent';
+          nav.style.backdropFilter = 'none';
+          nav.style.webkitBackdropFilter = 'none';
+          nav.style.boxShadow = 'none';
+          nav.style.paddingTop = '18px';
+          nav.style.paddingBottom = '18px';
+        }
+      };
+      this._onScroll = onScroll;
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
+  }
+
+  componentWillUnmount() {
+    if (this._onScroll) window.removeEventListener('scroll', this._onScroll);
+    if (this._fallback) clearTimeout(this._fallback);
+    if (this._io) this._io.disconnect();
+  }
+
+  pickLineup = (v) => {
+    const s = this.lineupRef.current;
+    if (s) s.value = v;
+  };
+
+  submit = (e) => {
+    e.preventDefault();
+    const f = this.formRef.current;
+    const get = (n) => { const el = f && f.elements[n]; return el ? ('' + el.value).trim() : ''; };
+    const email = (this.props.bookingEmail || 'booking@cesarcruzmusic.com').trim();
+    const subject = 'Booking request — ' + (get('etype') || 'event') + (get('date') ? (' on ' + get('date')) : '');
+    const body = [
+      'Name: ' + get('name'),
+      'Email: ' + get('email'),
+      'Event date: ' + get('date'),
+      'Event type: ' + get('etype'),
+      'Lineup: ' + get('lineup'),
+      '',
+      'Message:',
+      get('message')
+    ].join('\n');
+    window.location.href = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    this.setState({ sent: true });
+  };
+
+  renderVals() {
+    const email = (this.props.bookingEmail || 'booking@cesarcruzmusic.com').trim();
+    const url = (this.props.videoEmbedUrl ?? 'https://www.youtube.com/embed/260GFp8UsPc?si=i0_MuJVFFMVDbXgr').trim();
+    return {
+      rootRef: this.rootRef,
+      navRef: this.navRef,
+      formRef: this.formRef,
+      lineupRef: this.lineupRef,
+      sent: this.state.sent,
+      onSubmit: this.submit,
+      pickSolo: () => this.pickLineup('Solo'),
+      pickDuo: () => this.pickLineup('Duo'),
+      pickTrio: () => this.pickLineup('Trio'),
+      pickBand: () => this.pickLineup('Full Band'),
+      bookingEmail: email,
+      mailtoBooking: 'mailto:' + email,
+      videoUrl: url,
+      hasVideo: !!url,
+      noVideo: !url,
+      showSetlist: this.props.showSetlist !== false
+    };
+  }
+}
+</script>
+</body>
+</html>
